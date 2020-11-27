@@ -1,0 +1,349 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+
+    
+}
+
+header .Colmar-logo {
+    display: flex;
+    height: 2rem ;
+    margin: 0 1.5rem;
+}
+
+header nav  {  
+    margin: 0 1.5rem;
+}
+
+header nav span {
+    margin: 0 1rem;
+}
+
+.Colmar-first-landing {
+    display: flex;
+    background-color: rgb(184, 180, 180);
+}
+
+.Colmar-first-landing .landing-pic {
+    width: 60%;
+    height: 23rem;
+    background-image: url("https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?cs=srgb&dl=pexels-vlada-karpovich-4050315.jpg&fm=jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 2rem 1.5rem;
+}
+
+.Colmar-first-landing article {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    
+
+}
+
+.Colmar-first-landing article h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.Colmar-first-landing article .get-started-button {
+    width: 90%;
+    margin: 1rem auto;
+    padding: 0.5rem 2rem;
+    background-color: gray;
+    border-style: none;
+    color: white;
+}
+
+
+
+/*COLMAN SECOND LANDING PAGE*/
+
+.Colmar-second-landing{
+    display: flex;
+}
+.Colmar-second-landing .landing-pic-2 {
+    width: 60%;
+    height: 20rem;
+    margin: 2rem 1.5rem;
+}
+
+.Colmar-second-landing  h1, p, small {
+    width: 50%;
+    margin: 24px;
+}
+
+.Colmar-second-landing article h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.Colmar-second-landing aside {
+    margin: 2rem 1.5rem;
+    display: flex;
+    flex-flow: column;
+    width: 55%;
+    height: 10rem;
+}
+
+.Colmar-second-landing, .Oritentation-date, .Our-Campus, .Our-guest-lecture {
+    display: flex;
+    padding: 0.5rem;
+   
+} 
+
+
+ .orientation-info , .campus-info, .guest-info {
+   padding: 1.5rem;
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+   align-items: flex-start;
+   width: 65%;
+}
+
+.Colmar-second-landing aside img {
+    width: 35%;
+    height: auto;
+}
+
+.Colmar-second-landing aside small {
+    color: blue;
+    margin: 0;
+    margin-top: 0.5rem;
+}
+
+.Colmar-second-landing aside h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* THIRD LANDING PAGE */
+
+.third-landing-page {
+    background-color: rgb(226, 223, 223);
+}
+
+.third-landing-page h1 {
+    padding: 2rem 0;
+    font-size: 2rem;
+}
+   
+
+
+.grid-pictures {
+    display: grid;
+    grid-row-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 6rem;
+    padding-bottom: 2rem;
+
+}
+
+
+.third-landing-page .grid-pictures figcaption {
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content:space-around;
+    align-items: center;
+    background-color: white;
+    margin-top: -4px;
+}
+
+.third-landing-page .grid-pictures figure img {
+    width: 20rem;
+  height: 11rem;
+}
+
+.third-landing-page .grid-pictures figure figcaption {
+    width: 20rem;
+    height: 10rem;
+}
+
+/* FOURTH LANDING PAGE*/
+
+.fourth-landing-page {
+     display: flex;
+}
+
+.fourth-landing-page .video-info {
+    width: 60%;
+    margin: 1rem 1.5rem 1.5rem 1.5rem;
+   
+}
+.fourth-landing-page .video-info video{
+    width: 100%;
+    height: auto;
+}
+
+.fourth-landing-page .fisma-nowthen{
+    width: 40%;
+    display: flex;
+    flex-flow: column wrap;
+    
+}
+
+.fourth-landing-page .fisma-nowthen .fisma { 
+display: flex;
+background-color: gray;
+padding: 1rem;
+}
+
+.fourth-landing-page .fisma-nowthen .now-then{
+    display: flex;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.fourth-landing-page .fisma-nowthen  span{
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+}
+
+
+.fourth-landing-page img {
+    width: 35%;
+    height: auto;
+}
+
+/*FOOTER*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 1.5rem;
+    border-top: gray;
+    margin: 1rem;
+}
+
+.mobile-header, .mobile-fourth-video, .mobile-second-landing{
+    display: none;
+}
+
+
+/*MOBILE VIEW */
+
+@media screen and (max-width: 600px) {
+    .desktop-header {
+        display: none;
+    }
+    .Colmar-first-landing {
+        display: flex;
+        flex-flow: column wrap ;   
+    }
+    
+    
+    .Colmar-first-landing article {
+        width: 100%;
+        text-align: left;
+        padding: 2rem;
+    
+    }
+    .Colmar-first-landing .landing-pic{
+        width: 100%;
+        margin: 0;
+    }
+    .Colmar-first-landing .get-started-button {
+        width: 90%;
+        margin: auto;
+        
+    }
+
+    .mobile-header{
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .Colmar-second-landing article {
+        display: none;
+    }
+
+    .Colmar-second-landing aside {
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+
+    .Oritentation-date, .Our-Campus, .Our-guest-lecture{
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        
+    }
+
+    .Colmar-second-landing aside img, article {
+        width: 100%;
+    }
+
+    .mobile-second-landing {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-second-landing h1 {
+        font-size: 1.8rem;
+        padding: 1.5rem;
+    }
+
+    .mobile-second-landing ul{
+        list-style: none;
+        width: 90%;
+        margin: auto ;
+    }
+
+    .mobile-second-landing ul li {
+        background-color: rgb(225, 225, 225);
+        margin: 0.5rem 0 ;
+        padding: 1rem 1rem 2rem 1rem;
+        
+    }
+
+    .third-landing-page, .fourth-landing-page{
+        display: none;
+    }
+    
+    .mobile-fourth-video{
+        display: block;
+    }
+
+    .mobile-fourth-video video {
+        width: 100%;
+        height: auto;
+    }
+
+    .mobile-fourth-video h1{
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 1.8rem;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-around;
+        font-size: small;
+        font-weight: 100;
+        margin: 1rem 0;
+    }
+  }

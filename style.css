@@ -11,8 +11,6 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 4rem;
-
-    
 }
 
 header .Colmar-logo {
@@ -282,6 +280,10 @@ footer{
         display: flex;
         width: 100%;
         height: auto;
+    }
+
+    .Colmar-second-landing aside span {
+        text-align: left;
     }
 
     .Oritentation-date, .Our-Campus, .Our-guest-lecture{
